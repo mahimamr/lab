@@ -1,0 +1,355 @@
+/*Helpers*/
+
+.mrg-t-10 {
+    margin-top: 10px;
+}
+.mrg-t-20 {
+    margin-top: 20px;
+}
+
+.mrg-b-10 {
+    margin-bottom: 10px;
+}
+
+.no-gutter {
+    padding: 0;
+}
+
+.no-radius {
+    border-radius: 0;
+}
+
+html body {
+    background-color: #F7F8FA;
+}
+body .btn-red {
+    background-color: #f92929;
+    color: #fff;
+    border-color: #f92929;
+}
+
+/*Header*/
+
+header.navbar-default {
+    margin-bottom: 0;
+    background-color: #fff;
+}
+
+header .btn-sign-up {
+    background-color: #f92929;
+    border-color: #f92929;
+    color: #fff;
+}
+
+.btn-cart {
+    background-color: transparent;
+    border: none;
+}
+.menu-icon {
+    padding: 4px 8px 4px 0;
+    display: inline-block;
+}
+.navbar-default .navbar-brand{
+    padding: 2px 15px;
+}
+.navbar-brand img {
+    max-width: 180px;
+}
+
+/*Header*/
+
+/*Banner Section*/
+
+section.banner-container {
+    min-height: 360px;
+    background: url(../img/fxkart-bg.jpg) no-repeat scroll center 20% / cover;
+    position: relative;
+    color: #fff;
+}
+
+.feature-container {
+    background-color: #f92929;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.feature-container .media .fa {
+    color: #fff;
+}
+
+.banner-container .search-block {
+    position: absolute;
+    bottom: 20%;
+    width: 100%;
+    margin: 0 auto;
+    right: 0;
+    left: 0;
+}
+.search-block .input-group {
+    width: 70%;
+    padding: 16px;
+    background-color: #6b596f63;
+    margin: 0 auto;
+}
+.search-block .input-group .form-control {
+    padding: 30px;
+}
+select.selectpicker {
+    max-width: 100px;
+}
+.btn-group.bootstrap-select > button.btn {
+    border: none;
+    background-color:transparent;
+    box-shadow: none;
+}
+.search-block .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: 170px;
+}
+.search-block .input-group-addon {
+    background-color: #fff;
+}
+.search-block .input-group-addon:last-child {
+    background-color: #f92929;
+}
+.search-block .btn:hover, .search-block span.input-group-addon:hover button {
+    border: none;
+}
+.search-block span.input-group-addon:hover, .search-block span.input-group-addon:hover button{
+    background-color: #d4d4d4;
+    color: #333;
+}
+.search-block .bootstrap-select .dropdown-toggle:focus {
+    outline: none;
+}
+/*Banner Section*/
+
+/*Result Container*/
+
+.result-container .carousel .carousel-control {
+    background: none;
+    top: 0;
+    bottom: auto;
+    right: 0;
+    width: 2%;
+}
+
+.result-container .carousel-control.left {
+    left: 85%;
+}
+
+.result-container .carousel-control.right {
+    right: 0;
+    left: 90%;
+}
+.show-on-hover {
+    display: none;
+}
+.result-container a.carousel-control {
+    background: none;
+}
+
+.glyphicon {
+    color: #FF5722;
+}
+
+.carousel-indicators {
+    display: none;
+}
+
+.course-heading {
+    font-weight: 500;
+    font-size: 15px;
+    color: #29303b;
+}
+
+.discover-container .btn {
+    width: 100%;
+    padding: 8px;
+    color: #fff;
+}
+
+.discover-container .btn-top-rated {
+    background-color: #1E7199;
+}
+
+.discover-container .btn-trending {
+    background-color: #6B5593;
+}
+
+.discover-container .btn-noteworthy {
+    background-color: #26A3A4;
+}
+.course-panel {
+    padding: 8px;
+}
+.media-object {
+    min-width: 80px;
+    max-width: 80px;
+}
+/*Result Container*/
+
+/*Portfolio*/
+
+.portfolio-container p.title {
+    text-align: center;
+}
+
+.portfolio-container .thumbnail {
+    margin-bottom: 8px;
+}
+
+.info small {
+    margin-bottom: 10px;
+    display: block;
+    max-width: 60%;
+    margin: 0 auto 10px;
+}
+
+.call-to-action {
+    margin-top: 30px;
+}
+
+.call-to-action .btn {
+    background-color: #f92929;
+    color: #fff;
+    border-color: #f92929;
+}
+
+.call-to-action .text-center:first-child:after {
+    content: "";
+    position: absolute;
+    border-right: 1px solid #ccc;
+    top: 0;
+    height: 100%;
+    right: 0;
+}
+section.contact-container {
+    color: #fff;
+    background-color: gray;
+    padding: 30px;
+}
+.list-heading {
+    font-weight: 600;
+}
+.list-address a {
+    color: #fff;
+}
+.list-caption {
+    font-size: 11px;
+    color: rgb(230, 225, 225);
+}
+.btn-contact {
+    min-width: 20%;
+    font-size: 1.2em;
+}
+.list-social-media li {
+    padding: 8px 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+.list-social-media li i {
+    color: #fff;
+    font-size: 2em;
+}
+.list-social-media li i:hover {
+    color:#f92929;
+}
+
+/*Footer*/
+
+.bs-footer {
+    text-align: center;
+    background-color: #333;
+    border-bottom: 3px solid #FF5722;
+}
+.bs-footer a {
+    color: #fff;
+}
+
+
+/*Footer*/
+/* Search */
+.search {
+    width: 100%;
+    position: relative
+  }
+  
+  .searchTerm {
+    float: left;
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 20px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .searchButton {
+    position: absolute;  
+    right: -50px;
+    width: 40px;
+    height: 36px;
+    border: 1px solid #00B4CC;
+    background: #00B4CC;
+    text-align: center;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+  }
+  
+  /*Resize the wrap to see the search bar change!*/
+  .wrap{
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Login */
+  .social-login li a {
+      width: 100%;
+      margin-bottom: 10px;
+  }
+.modal .glyphicon {
+    color: #ccc;
+}
+.social-login li .btn {
+    padding: 8px 16px;
+}
+.social-login li .btn-facebook {
+    color: #fff;
+    background-color: #1a538a;
+}
+.modal .btn {
+    width: 100%;
+}
+.divider {
+    height: 1px;
+    margin: 9px 0;
+    background-color: #e5e5e5;
+    position: relative;
+}
+.divider:after {
+    content: "or";
+    position: absolute;
+    top: -12px;
+    background-color: #fff;
+    right: 50%;
+    font-size: 1.2em;
+}
+.social-login {
+    margin-bottom: 15px;
+}
+.modal-footer a {
+    display: block;
+    text-align: center;
+}
+footer .nav>li>a>img {
+    max-width: 100px;
+}

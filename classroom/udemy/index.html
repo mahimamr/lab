@@ -6,11 +6,15 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <title>Bootstrap 101 Template</title>
+  <title>Learn for Tomorrow</title>
   <link href="assets/css/style.css" rel="stylesheet">
   <!-- Bootstrap -->
   <link href="assets/library/css/bootstrap.min.css" rel="stylesheet">
   <script src="https://use.fontawesome.com/162aad0e4b.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/css/bootstrap-select.min.css">
+
+
   <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
@@ -31,43 +35,109 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="#">Brand</a>
+        <a class="navbar-brand" href="#">
+          <img src="assets/img/logo.jpg" alt="logo" class="img-responsive">
+        </a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
         <ul class="nav navbar-nav">
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Categories
-              <span class="caret"></span>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">
+              <span class="fa fa-th"></span>
+              Categories
             </a>
             <ul class="dropdown-menu">
-              <li>
-                <a href="#">Action</a>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-building"></i>
+                  </span>
+                  <span class="menu-title">Business</span>
+                </a>
               </li>
-              <li>
-                <a href="#">Another action</a>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-bar-chart"></i>
+                  </span>
+                  <span class="menu-title">Marketing</span>
+                </a>
               </li>
-              <li>
-                <a href="#">Something else here</a>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-line-chart"></i>
+                  </span>
+                  <span class="menu-title">Sales</span>
+                </a>
               </li>
-              <li role="separator" class="divider"></li>
-              <li>
-                <a href="#">Separated link</a>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-file-code-o"></i>
+                  </span>
+                  <span class="menu-title">Development</span>
+                </a>
               </li>
-              <li role="separator" class="divider"></li>
-              <li>
-                <a href="#">One more separated link</a>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-file-code-o"></i>
+                  </span>
+                  <span class="menu-title">IT & Software</span>
+                </a>
+              </li>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-book"></i>
+                  </span>
+                  <span class="menu-title">Personal Development</span>
+                </a>
+              </li>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-paw"></i>
+                  </span>
+                  <span class="menu-title">Lifestyle</span>
+                </a>
+              </li>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-music"></i>
+                  </span>
+                  <span class="menu-title">Music</span>
+                </a>
+              </li>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-graduation-cap"></i>
+                  </span>
+                  <span class="menu-title">Academics</span>
+                </a>
+              </li>
+              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+                <a href="#" role="button" target="_self">
+                  <span class="menu-icon">
+                    <i class="fa fa-heartbeat"></i>
+                  </span>
+                  <span class="menu-title">Health & Fitness</span>
+                </a>
               </li>
             </ul>
           </li>
         </ul>
         <form class="navbar-form navbar-right">
-          <button type="submit" class="btn btn-cart">
-            <i class="fa fa-shopping-cart fa-2x"></i>
-          </button>
-          <button type="submit" class="btn btn-default btn-sign-up">Sign Up</button>
-          <button type="submit" class="btn btn-default btn-login">Login</button>
+          <a class="btn btn-cart">
+            <i class="fa fa-shopping-cart"></i>
+          </a>
+          <a class="btn btn-default btn-sign-up" data-toggle="modal" data-target="#sign-up">Sign Up</a>
+          <a class="btn btn-default btn-login" data-toggle="modal" data-target="#login">Login</a>
         </form>
         <ul class="nav navbar-nav navbar-right">
           <li>
@@ -86,14 +156,20 @@
     <div class="container">
       <div class="row">
         <div class="col-sm-4 search-block">
-          <p>This year i will</p>
-          <small>Get courses during our extended deal</small>
           <div class="input-group">
+            <span class="input-group-addon">
+              <select class="selectpicker">
+                <option value="">--Select--</option>
+                <option value="">Development</option>
+                <option value="">IT and Software</option>
+                <option value="">Sales</option>
+                <option value="">Marketing</option>
+                <option value="">Health and Fittness</option>
+              </select>
+            </span>
             <input type="text" class="form-control" placeholder="What do you want to learn?">
-            <span class="input-group-btn">
-              <button class="btn btn-default" type="button">
-                <i class="fa fa-search"></i>
-              </button>
+            <span class="input-group-addon">
+              <button class="btn btn-default btn-red" type="button">Search Event</button>
             </span>
           </div>
         </div>
@@ -148,6 +224,7 @@
   </section>
   <section class="result-container search-by-feature">
     <div class="container">
+
       <div class="row mrg-t-10">
         <div class="col-sm-6">
           <p class="feature-heading">Top Courses in
@@ -178,7 +255,7 @@
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
                       <div class="caption">
@@ -189,7 +266,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
@@ -200,7 +277,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_3.jpg" alt="thumbnail">
                       <div class="caption">
@@ -211,31 +288,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_4.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_5.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
                         <p class="course-heading">Modern JavaScript From The Beginning</p>
                         <p>
@@ -248,7 +303,7 @@
               </div>
               <div class="item">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
                       <div class="caption">
@@ -259,7 +314,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
@@ -270,7 +325,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_3.jpg" alt="thumbnail">
                       <div class="caption">
@@ -281,31 +336,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_4.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_5.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
                         <p class="course-heading">Modern JavaScript From The Beginning</p>
                         <p>
@@ -318,7 +351,7 @@
               </div>
               <div class="item">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
                       <div class="caption">
@@ -329,7 +362,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
@@ -340,7 +373,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_3.jpg" alt="thumbnail">
                       <div class="caption">
@@ -351,31 +384,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_4.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_5.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
                         <p class="course-heading">Modern JavaScript From The Beginning</p>
                         <p>
@@ -420,7 +431,7 @@
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
                       <div class="caption">
@@ -431,7 +442,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
@@ -442,7 +453,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_3.jpg" alt="thumbnail">
                       <div class="caption">
@@ -453,31 +464,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_4.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_5.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
                         <p class="course-heading">Modern JavaScript From The Beginning</p>
                         <p>
@@ -490,7 +479,7 @@
               </div>
               <div class="item">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
                       <div class="caption">
@@ -501,7 +490,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
@@ -512,7 +501,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_3.jpg" alt="thumbnail">
                       <div class="caption">
@@ -523,31 +512,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_4.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_5.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
                         <p class="course-heading">Modern JavaScript From The Beginning</p>
                         <p>
@@ -560,7 +527,7 @@
               </div>
               <div class="item">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
                       <div class="caption">
@@ -571,7 +538,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
@@ -582,7 +549,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_3.jpg" alt="thumbnail">
                       <div class="caption">
@@ -593,31 +560,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_4.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_5.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
                         <p class="course-heading">Modern JavaScript From The Beginning</p>
                         <p>
@@ -632,6 +577,57 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+  <section class="feature-container mrg-b-10">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4">
+          <div class="media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <i class="fa fa-book fa-2x"></i>
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">10000 Online Courses</h4>
+              <small>Get courses during our extended deal</small>
+            </div>
+          </div>
+
+        </div>
+        <div class="col-sm-4">
+          <div class="media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <i class="fa fa-free-code-camp fa-2x"></i>
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Lifetime Access</h4>
+              <small>Get courses during our extended deal</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="media">
+            <div class="media-left media-middle">
+              <a href="#">
+                <i class="fa fa-fire fa-2x"></i>
+              </a>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">Expert Instruction</h4>
+              <small>Get courses during our extended deal</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="result-container search-by-feature">
+    <div class="container">
+
       <div class="row mrg-t-10">
         <div class="col-sm-6">
           <p class="feature-heading">Top Courses in
@@ -662,7 +658,7 @@
             <div class="carousel-inner" role="listbox">
               <div class="item active">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
                       <div class="caption">
@@ -672,8 +668,17 @@
                         </p>
                       </div>
                     </div>
+                    <div class="thumbnail show-on-hover">
+                        <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
+                        <div class="caption">
+                          <p class="course-heading">Modern JavaScript From The Beginning</p>
+                          <p>
+                            <small>Jhon Doe, Mark Antony</small>
+                          </p>
+                        </div>
+                      </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
@@ -684,7 +689,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_3.jpg" alt="thumbnail">
                       <div class="caption">
@@ -695,31 +700,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_4.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_5.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
                         <p class="course-heading">Modern JavaScript From The Beginning</p>
                         <p>
@@ -732,7 +715,7 @@
               </div>
               <div class="item">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
                       <div class="caption">
@@ -743,7 +726,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
@@ -754,7 +737,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_3.jpg" alt="thumbnail">
                       <div class="caption">
@@ -765,31 +748,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_4.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_5.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
                         <p class="course-heading">Modern JavaScript From The Beginning</p>
                         <p>
@@ -802,7 +763,7 @@
               </div>
               <div class="item">
                 <div class="row">
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
                       <div class="caption">
@@ -813,7 +774,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
@@ -824,7 +785,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_3.jpg" alt="thumbnail">
                       <div class="caption">
@@ -835,31 +796,9 @@
                       </div>
                     </div>
                   </div>
-                  <div class="col-sm-2">
+                  <div class="col-sm-3">
                     <div class="thumbnail">
                       <img src="assets/img/thumbnail_4.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_5.jpg" alt="thumbnail">
-                      <div class="caption">
-                        <p class="course-heading">Modern JavaScript From The Beginning</p>
-                        <p>
-                          <small>Jhon Doe, Mark Antony</small>
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-sm-2">
-                    <div class="thumbnail">
-                      <img src="assets/img/thumbnail_2.jpg" alt="thumbnail">
                       <div class="caption">
                         <p class="course-heading">Modern JavaScript From The Beginning</p>
                         <p>
@@ -880,7 +819,107 @@
     <div class="container">
       <p class="feature-heading">Discover Our Popular Courses</p>
       <div class="row">
-
+        <div class="col-sm-6">
+          <div class="panel panel-default course-panel">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" src="assets/img/pen.svg" alt="object">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Javascript</h4>
+                <p class="media-content">
+                  Spend some time with this powerful scripting language and learn to build lightweight applications with enhanced user interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default course-panel">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" src="assets/img/windows.svg" alt="object">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">.Net</h4>
+                <p class="media-content">
+                  Mobilize your knowledge and take your apps with you by learning the basics of Android development and Java. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default course-panel">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" src="assets/img/book.svg" alt="object">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">HTML/CSS</h4>
+                <p class="media-content">
+                  Spend some time with this powerful scripting language and learn to build lightweight applications with enhanced user interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default course-panel">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" src="assets/img/android.svg" alt="object">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Android</h4>
+                <p class="media-content">
+                  Mobilize your knowledge and take your apps with you by learning the basics of Android development and Java. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default course-panel">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" src="assets/img/gem.svg" alt="object">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Ruby</h4>
+                <p class="media-content">
+                  Spend some time with this powerful scripting language and learn to build lightweight applications with enhanced user interfaces.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="panel panel-default course-panel">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                  <img class="media-object" src="assets/img/snake.svg" alt="object">
+                </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">Python</h4>
+                <p class="media-content">
+                  Mobilize your knowledge and take your apps with you by learning the basics of Android development and Java. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row">
         <div class="col-sm-4">
           <a href="#" class="btn btn-default btn-top-rated"> Top Rated</a>
         </div>
@@ -890,7 +929,7 @@
         <div class="col-sm-4">
           <a href="#" class="btn btn-default btn-noteworthy"> Top Rated</a>
         </div>
-      </div>
+      </div> -->
     </div>
   </section>
   <section class="portfolio-container mrg-t-20">
@@ -898,53 +937,69 @@
       <p class="feature-heading">Achive your goals</p>
       <div class="row mrg-b-10">
         <div class="col-sm-4">
-          <div class="thumbnail">
-            <img src="assets/img/portfolio_1.jpg" alt="thumbnail">
-          </div>
-          <p class="title">Expanding Your Programming Knowledge</p>
+          <a href="#">
+            <div class="thumbnail">
+              <img src="assets/img/portfolio_1.jpg" alt="thumbnail">
+            </div>
+            <p class="title">Expanding Your Programming Knowledge</p>
+          </a>
         </div>
         <div class="col-sm-4">
-          <div class="thumbnail">
-            <img src="assets/img/portfolio_2.jpg" alt="thumbnail">
-          </div>
-          <p class="title">Be Your Own Boss</p>
+          <a href="#">
+            <div class="thumbnail">
+              <img src="assets/img/portfolio_2.jpg" alt="thumbnail">
+            </div>
+            <p class="title">Be Your Own Boss</p>
+          </a>
         </div>
         <div class="col-sm-4">
-          <div class="thumbnail">
-            <img src="assets/img/portfolio_3.jpg" alt="thumbnail">
-          </div>
-          <p class="title">Loan an Exciting New Tech Job </p>
+          <a href="#">
+            <div class="thumbnail">
+              <img src="assets/img/portfolio_3.jpg" alt="thumbnail">
+            </div>
+            <p class="title">Loan an Exciting New Tech Job </p>
+          </a>
         </div>
       </div>
       <div class="row">
         <div class="col-sm-3">
-          <div class="thumbnail">
-            <img src="assets/img/portfolio_4.jpg" alt="thumbnail">
-          </div>
-          <p class="title">Expanding Your Programming Knowledge</p>
+          <a href="#">
+            <div class="thumbnail">
+              <img src="assets/img/portfolio_4.jpg" alt="thumbnail">
+            </div>
+            <p class="title">Expanding Your Programming Knowledge</p>
+          </a>
+
         </div>
         <div class="col-sm-3">
-          <div class="thumbnail">
-            <img src="assets/img/portfolio_5.jpg" alt="thumbnail">
-          </div>
-          <p class="title">Be Your Own Boss</p>
+          <a href="#">
+            <div class="thumbnail">
+              <img src="assets/img/portfolio_5.jpg" alt="thumbnail">
+            </div>
+            <p class="title">Be Your Own Boss</p>
+          </a>
+
         </div>
         <div class="col-sm-3">
-          <div class="thumbnail">
-            <img src="assets/img/portfolio_6.jpg" alt="thumbnail">
-          </div>
-          <p class="title">Loan an Exciting New Tech Job </p>
+          <a href="#">
+            <div class="thumbnail">
+              <img src="assets/img/portfolio_6.jpg" alt="thumbnail">
+            </div>
+            <p class="title">Loan an Exciting New Tech Job </p>
+          </a>
         </div>
         <div class="col-sm-3">
-          <div class="thumbnail">
-            <img src="assets/img/portfolio_7.jpg" alt="thumbnail">
-          </div>
-          <p class="title">Loan an Exciting New Tech Job </p>
+          <a href="#">
+            <div class="thumbnail">
+              <img src="assets/img/portfolio_7.jpg" alt="thumbnail">
+            </div>
+            <p class="title">Loan an Exciting New Tech Job </p>
+          </a>
         </div>
       </div>
     </div>
   </section>
-  <section class="call-to-action mrg-t-10">
+  <!-- <section class="call-to-action mrg-t-10">
     <div class="container">
       <div class="row">
         <div class="col-sm-6 text-center">
@@ -963,6 +1018,68 @@
         </div>
       </div>
     </div>
+  </section> -->
+  <section class="contact-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 mrg-b-10">
+          <h2 class="block-title">Questions?</h2>
+          <h3 class="block-caption">We're here to help you.</h3>
+          <a href="#" class="btn btn-default btn-red btn-contact">Contact Us</a>
+        </div>
+        <ul class="list-unstyled col-sm-3">
+          <li class="list-heading">Email</li>
+          <li class="list-address">sri@gmail.com</li>
+          <li class="list-caption">Email suppot available 24x7</li>
+        </ul>
+        <ul class="list-unstyled col-sm-3">
+          <li class="list-heading">Phone</li>
+          <li class="list-address">080-321456</li>
+          <li class="list-caption">Phone suppot available 24x7</li>
+        </ul>
+        <ul class="list-unstyled col-sm-3">
+          <li class="list-heading">Quick Links</li>
+          <li class="list-address">
+            <a href="#">About us</a>
+          </li>
+          <li class="list-address">
+            <a href="#">Carieers</a>
+          </li>
+          <li class="list-address">
+            <a href="#">FAQ</a>
+          </li>
+          <li class="list-address">
+            <a href="#">Contact us</a>
+          </li>
+          <li class="list-address">
+            <a href="#">Events</a>
+          </li>
+        </ul>
+        <ul class="list-unstyled list-social-media col-sm-3 navbar-nav">
+          <li>
+            <a href="#">
+              <i class="fa fa-facebook-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-twitter-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-google-plus-square"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-pinterest-square"></i>
+            </a>
+          </li>
+
+        </ul>
+      </div>
+    </div>
   </section>
   <footer class="bs-footer">
     <nav class="navbar">
@@ -971,7 +1088,9 @@
 
         <ul class="nav navbar-nav">
           <li>
-            <a href="#" class="navbar-brand">Brand</a>
+            <a href="#" class="navbar-brand">
+              <img src="assets/img/logo.jpg" alt="logo" class="img-responsive">
+            </a>
           </li>
           <li>
             <a href="#">Copyright &copy; 2018</a>
@@ -992,11 +1111,135 @@
       <!-- /.container -->
     </nav>
   </footer>
+  <!-- Modal -->
+  <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Login To Your Account</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <ul class="list-unstyled social-login">
+                <li>
+                  <a href="#" class="btn btn-default btn-facebook">
+                    <i class="fa fa-facebook-f"></i> Connect with facebook
+                  </a>
+                </li>
+                <li>
+                  <a href="#" class="btn btn-default btn-google">
+                    <i class="fa fa-google"></i> Connect with Google
+                  </a>
+                </li>
+                <li role="separator" class="divider"></li>
+              </ul>
+              <form action="" class="form-horizontal">
+                <div class="input-group mrg-b-10">
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                  </span>
+                  <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                </div>
+
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </span>
+                  <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-login btn-red">Login</button>
+          <a href="#" data-toggle="modal" data-target="#forgot-pwd">Forgot Password ?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sign up Modal -->
+  <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Signup to get start</h4>
+        </div>
+        <div class="modal-body">
+          <div class="row">
+            <div class="col-sm-12">
+              <form action="" class="form-horizontal">
+                <div class="input-group mrg-b-10">
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-user"></i>
+                  </span>
+                  <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                </div>
+                <div class="input-group mrg-b-10">
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-envelope"></i>
+                  </span>
+                  <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                </div>
+
+                <div class="input-group">
+                  <span class="input-group-addon">
+                    <i class="glyphicon glyphicon-lock"></i>
+                  </span>
+                  <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-signup btn-red">Sign Up</button>
+          <!-- <a href="#" data-toggle="modal" data-target="#login">Already have an account</a> -->
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Forgot Password -->
+
+  <div class="modal fade" id="forgot-pwd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog modal-md" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+          <h4 class="modal-title" id="myModalLabel">Reset Your Password</h4>
+        </div>
+        <div class="modal-body">
+          <fieldset>
+            <div class="form-group">
+              <input class="form-control input-lg" placeholder="E-mail Address" name="email" type="email">
+            </div>
+            <input class="btn btn-lg btn-primary btn-block" value="Send My Password" type="submit">
+          </fieldset>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="assets/scripts/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="assets/library/js/bootstrap.min.js"></script>
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+  <script>
+    $('.selectpicker').selectpicker();
+  </script>
 </body>
 
 </html>
