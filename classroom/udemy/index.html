@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
   <title>Learn for Tomorrow</title>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Roboto:400,500,700" rel="stylesheet">
   <link href="assets/css/style.css" rel="stylesheet">
   <!-- Bootstrap -->
   <link href="assets/library/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +50,7 @@
               Categories
             </a>
             <ul class="dropdown-menu">
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-building"></i>
@@ -57,7 +58,7 @@
                   <span class="menu-title">Business</span>
                 </a>
               </li>
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-bar-chart"></i>
@@ -65,7 +66,7 @@
                   <span class="menu-title">Marketing</span>
                 </a>
               </li>
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-line-chart"></i>
@@ -73,7 +74,7 @@
                   <span class="menu-title">Sales</span>
                 </a>
               </li>
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-file-code-o"></i>
@@ -81,7 +82,7 @@
                   <span class="menu-title">Development</span>
                 </a>
               </li>
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-file-code-o"></i>
@@ -89,7 +90,7 @@
                   <span class="menu-title">IT & Software</span>
                 </a>
               </li>
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-book"></i>
@@ -97,7 +98,7 @@
                   <span class="menu-title">Personal Development</span>
                 </a>
               </li>
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-paw"></i>
@@ -105,7 +106,7 @@
                   <span class="menu-title">Lifestyle</span>
                 </a>
               </li>
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-music"></i>
@@ -113,7 +114,7 @@
                   <span class="menu-title">Music</span>
                 </a>
               </li>
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-graduation-cap"></i>
@@ -121,7 +122,7 @@
                   <span class="menu-title">Academics</span>
                 </a>
               </li>
-              <li class="menu__link" data-purpose="ver-Development" role="presentation">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
                 <a href="#" role="button" target="_self">
                   <span class="menu-icon">
                     <i class="fa fa-heartbeat"></i>
@@ -133,9 +134,15 @@
           </li>
         </ul>
         <form class="navbar-form navbar-right">
-          <a class="btn btn-cart">
-            <i class="fa fa-shopping-cart"></i>
-          </a>
+          <div class="btn btn-cart dropdown">
+            <i class="fa fa-shopping-cart dropdown-toggle" data-toggle="dropdown" role="button"></i>
+            <div class="dropdown-menu cart-menu">
+              <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                  <p class="menu-title">Your cart is empty.</p>
+                  <a href="#" class="btn btn-red">Continue to Shopping</a>
+              </li>
+            </div>
+          </div>
           <a class="btn btn-default btn-sign-up" data-toggle="modal" data-target="#sign-up">Sign Up</a>
           <a class="btn btn-default btn-login" data-toggle="modal" data-target="#login">Login</a>
         </form>
@@ -152,6 +159,8 @@
     </div>
     <!-- /.container-fluid -->
   </header>
+  <section class="main-container">
+
   <section class="banner-container">
     <div class="container">
       <div class="row">
@@ -243,7 +252,7 @@
           </a>
         </div>
         <div class="col-sm-12">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -264,7 +273,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -275,7 +331,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -286,7 +389,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -297,7 +447,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -312,7 +509,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -323,7 +567,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -334,7 +625,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -345,7 +683,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -360,7 +745,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -371,7 +803,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -382,7 +861,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -393,7 +919,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -419,7 +992,7 @@
           </a>
         </div>
         <div class="col-sm-12">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -440,7 +1013,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -451,7 +1071,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -462,7 +1129,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -473,7 +1187,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -488,7 +1249,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -499,7 +1307,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -510,7 +1365,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -521,7 +1423,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -536,7 +1485,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -547,7 +1543,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -558,7 +1601,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -569,7 +1659,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -646,7 +1783,7 @@
           </a>
         </div>
         <div class="col-sm-12">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel" data-interval="false">
             <!-- Indicators -->
             <ol class="carousel-indicators">
               <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -667,16 +1804,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
-                    </div>
-                    <div class="thumbnail show-on-hover">
-                        <img src="assets/img/thumbnail_1.jpg" alt="thumbnail">
-                        <div class="caption">
-                          <p class="course-heading">Modern JavaScript From The Beginning</p>
-                          <p>
-                            <small>Jhon Doe, Mark Antony</small>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
                           </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
                         </div>
                       </div>
+                    </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -687,7 +1862,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -698,7 +1920,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -709,7 +1978,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -724,7 +2040,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -735,7 +2098,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -746,7 +2156,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -757,7 +2214,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -772,7 +2276,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -783,7 +2334,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -794,7 +2392,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                   <div class="col-sm-3">
                     <div class="thumbnail">
@@ -805,7 +2450,54 @@
                           <small>Jhon Doe, Mark Antony</small>
                         </p>
                       </div>
+                      <div class="thumbnail show-on-hover">
+                        <div class="popover-header">
+                          <p class="publish-date">
+                            <small>Published:
+                              <span>03/06/2017</span>
+                            </small>
+                          </p>
+                          <h3 class="course-heading">
+                            <a href="#">The Modern JavaScript From The Beginning Course</a>
+                          </h3>
+                        </div>
+
+                        <div class="popover-body">
+                          <ul class="list-unstyled">
+                            <li class="list-item">
+                              <i class="fa fa-play-circle"></i>
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-clock-o"></i>
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <i class="fa fa-sliders"></i>
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                          <p class="course-desc">
+                            Master JavaScript with the most complete JavaScript course on the market! Includes projects, challenges, final exam, ES6
+                          </p>
+                          <ul class="bullet-type">
+                            <li class="list-item">
+                              <span class="list-item-text">100 Lecures</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">10 hours</span>
+                            </li>
+                            <li class="list-item">
+                              <span class="list-item-text">Beginning</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="popover-footer">
+                          <a href="#" class="btn btn-default btn-red btn-add-to-cart">Add To Cart</a>
+                        </div>
+                      </div>
                     </div>
+
                   </div>
                 </div>
               </div>
@@ -1081,6 +2773,7 @@
       </div>
     </div>
   </section>
+  </section>
   <footer class="bs-footer">
     <nav class="navbar">
       <div class="container">
@@ -1111,9 +2804,54 @@
       <!-- /.container -->
     </nav>
   </footer>
+  <!-- Sign up Modal -->
+  <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+      <div class="modal-dialog modal-md" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h4 class="modal-title" id="myModalLabel">Signup to get start</h4>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-sm-12">
+                <form action="" class="form-horizontal">
+                  <div class="input-group mrg-b-10">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-user"></i>
+                    </span>
+                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                  </div>
+                  <div class="input-group mrg-b-10">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-envelope"></i>
+                    </span>
+                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                  </div>
+  
+                  <div class="input-group">
+                    <span class="input-group-addon">
+                      <i class="glyphicon glyphicon-lock"></i>
+                    </span>
+                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary btn-signup btn-red">Sign Up</button>
+            <a href="#" data-toggle="modal" data-target="#login">Already have an account</a>
+  
+          </div>
+        </div>
+      </div>
+    </div>
   <!-- Modal -->
   <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-dialog modal-md" role="document">
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -1162,51 +2900,7 @@
       </div>
     </div>
   </div>
-  <!-- Sign up Modal -->
-  <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-    <div class="modal-dialog modal-sm" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-          <h4 class="modal-title" id="myModalLabel">Signup to get start</h4>
-        </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-sm-12">
-              <form action="" class="form-horizontal">
-                <div class="input-group mrg-b-10">
-                  <span class="input-group-addon">
-                    <i class="glyphicon glyphicon-user"></i>
-                  </span>
-                  <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
-                </div>
-                <div class="input-group mrg-b-10">
-                  <span class="input-group-addon">
-                    <i class="glyphicon glyphicon-envelope"></i>
-                  </span>
-                  <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
-                </div>
-
-                <div class="input-group">
-                  <span class="input-group-addon">
-                    <i class="glyphicon glyphicon-lock"></i>
-                  </span>
-                  <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary btn-signup btn-red">Sign Up</button>
-          <!-- <a href="#" data-toggle="modal" data-target="#login">Already have an account</a> -->
-
-        </div>
-      </div>
-    </div>
-  </div>
+  
   <!-- Forgot Password -->
 
   <div class="modal fade" id="forgot-pwd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
@@ -1223,13 +2917,12 @@
             <div class="form-group">
               <input class="form-control input-lg" placeholder="E-mail Address" name="email" type="email">
             </div>
-            <input class="btn btn-lg btn-primary btn-block" value="Send My Password" type="submit">
+            <input class="btn btn-lg btn-primary btn-block btn-red" value="Send My Password" type="submit">
           </fieldset>
         </div>
       </div>
     </div>
   </div>
-
 
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="assets/scripts/jquery.min.js"></script>
@@ -1239,6 +2932,14 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
   <script>
     $('.selectpicker').selectpicker();
+    //$('.show-on-hover').hide();
+    // $('.thumbnail').on('mouseenter', function () {
+    //   $(this).next().show();
+    // }).mouseleave(function () {
+    //   setTimeout(() => {
+    //     $(this).next().hide();
+    //   }, 3000);
+    // });
   </script>
 </body>
 
