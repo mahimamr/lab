@@ -30,6 +30,9 @@ body .btn-red {
     color: #fff;
     border-color: #f92929;
 }
+body .btn {
+    border-radius: 2px;
+}
 
 /*Header*/
 
@@ -496,12 +499,43 @@ footer .nav>li>a>img {
 /* Search Reslut */
 
 /* Search Reslut */
+.featured-navbar {
+    background-color: #29303b;
+    color: #fff;
+    padding-bottom: 15px;
+}
 .featured-navbar .breadcrumb {
     margin-bottom: 0;
-    padding: 8px 0 15px;
+    padding: 15px 0 0;
+    background-color: #29303b;
+}
+.featured-navbar .breadcrumb a {
+    color: #ccc;
+}
+.featured-navbar .breadcrumb .active a {
+    color: #fff;
 }
 .featured-navbar h2 {
-    margin: 0;
+    font-size: 24px;
+    margin: 5px auto 0;
+}
+.filter-section {
+    margin: 15px auto;
+}
+.filter-section .bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn) {
+    width: auto;
+}
+.filter-section .bootstrap-select .dropdown-toggle:focus {
+    outline: none !important;
+}
+.filter-section .bootstrap-select .dropdown-toggle {
+    background-color: #ddd !important;
+}
+.filter-section .btn-filters {
+    border: 2px solid #777;
+}
+.result-section .result-panel .course-heading a {
+    color: #29303b;
 }
 .result-panel .media-object {
     min-width: auto;
@@ -509,6 +543,11 @@ footer .nav>li>a>img {
 }
 .result-panel .course-panel {
     border-radius: 2px;
+    padding: 0;
+}
+.result-panel .media-left, .media>.pull-left {
+    padding-right: 15px;
+    padding-left: 15px;
 }
 .result-panel .media-body {
     padding: 8px 15px;
@@ -536,5 +575,27 @@ footer .nav>li>a>img {
     cursor: pointer;
 }
 .checked {
-    color: orange;
+    color: #f92929;
+}
+.result-section .pagination>li>a, .pagination>li>span {
+    padding: 12px 18px;
+}
+.result-section .pagination .fa {
+    font-size: 16px;
+}
+
+.result-section .best-seller-badge .btn-best {
+    position: relative;
+    padding: 0 8px;
+    border-radius: 3px;
+}
+.result-section .btn-best:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #f92929;
+    right: -10px;
 }
