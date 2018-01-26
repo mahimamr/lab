@@ -19,6 +19,9 @@
 .no-radius {
     border-radius: 0;
 }
+.block-width {
+    width: 100%;
+}
 
 html body {
     background-color: #F7F8FA;
@@ -598,4 +601,61 @@ footer .nav>li>a>img {
     border-bottom: 10px solid transparent;
     border-left: 10px solid #f92929;
     right: -10px;
+}
+
+/* Search Detail */
+.heading-title {
+    border-bottom: 1px solid #f92929;
+    display: inline-block;
+    margin-top: 0;
+}
+.search-panels {
+    margin-bottom: 20px;
+}
+.search-panels .well li {
+    list-style-type: circle;
+}
+.search-panels .content {
+    margin-bottom: 0;
+}
+.search-detail .well-footer .btn {
+    min-width: 120px;
+}
+.search-detail .well .fa {
+    margin-right: 10px;
+}
+.search-detail .list-social-media li i {
+    color: #777;
+    font-size: 1em;
+    border: 2px solid #777;
+    border-radius: 50%;
+    padding: 12px;
+    width: 40px;
+    height: 40px;
+}
+.search-detail .list-social-media li i:hover {
+    color: #fff;
+    background-color: #f92929;
+    border-color: #f92929;
+}
+.search-detail .list-item-text {
+    padding: 0 5px;
+}
+/* Cart */
+.cart .input-num {
+    max-width: 50px;
+    display: inline-block;
+    text-align: center;
+}
+.minus, .plus {
+    cursor: pointer;
+}
+.panel.panel-total {
+    padding: 8px;
+}
+.cart .list-item span {
+    font-size: 1.5em;
+}
+.people-count {
+    margin-bottom: 10px;
 }
