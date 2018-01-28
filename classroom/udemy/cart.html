@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Learn for Tomorrow</title>
-    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Roboto:400,500,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Roboto:400,500,700" rel="stylesheet"> -->
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- Bootstrap -->
     <link href="assets/library/css/bootstrap.min.css" rel="stylesheet">
@@ -179,97 +179,304 @@
         <div class="cart-section mrg-t-10">
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-8">
-                        <div class="panel cart-panel">
-                            <div>
-                                <div class="course-panel">
-                                    <div class="media">
-                                        <div class="row event-row">
-                                            <div class="media-left col-sm-2">
-                                                <a href="#">
-                                                    <img class="media-object" src="assets/img/search_2.jpg" alt="object">
-                                                </a>
-                                            </div>
+                    <div class="col-sm-12">
 
-                                            <div class="media-left col-sm-10">
+                        <table class="table table-responsive table-cart">
+                            <thead>
+                                <th>Qty</th>
+                                <th>Item Name</th>
+                                <th>Price</th>
+                                <th>Discount Price</th>
+                                <th>Total</th>
+                                <th>Action</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="people-count">
+                                            <span class="minus">
+                                                <i class="fa fa-minus"></i>
+                                            </span>
+                                            <input type="text" class="form-control input-num" />
+                                            <span class="plus">
+                                                <i class="fa fa-plus"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object" src="assets/img/search_4.jpg" alt="object">
+                                            </div>
+                                            <div class="media-body">
                                                 <h3 class="media-heading course-heading">
                                                     <a href="search-detail.html">The Modern JavaScript From The Beginning Course</a>
                                                 </h3>
-                                                <small>Jhon Doe - Leading JavaScript Expert</small>
                                             </div>
                                         </div>
-                                        <div class="row event-details-row mrg-t-10">
-                                            <div class="media-left col-sm-4 col-sm-offset-2">
-                                                <p class="package">Package 1</p>
+                                    </td>
+                                    <td>
+                                        <div class="price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-price" value="960" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-d-price" value="0" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-t-price" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-red btn-remove">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="people-count">
+                                            <span class="minus">
+                                                <i class="fa fa-minus"></i>
+                                            </span>
+                                            <input type="text" class="form-control input-num" />
+                                            <span class="plus">
+                                                <i class="fa fa-plus"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object" src="assets/img/search_4.jpg" alt="object">
                                             </div>
-
-                                            <div class="media-left col-sm-2">
-                                                <p class="item-price"> 960 </p>
-                                            </div>
-                                            <div class="media-left col-sm-4">
-                                                <div class="people-count">
-                                                    <span class="minus">
-                                                        <i class="fa fa-minus"></i>
-                                                    </span>
-                                                    <input type="text" class="form-control input-num" readonly />
-                                                    <span class="plus">
-                                                        <i class="fa fa-plus"></i>
-                                                    </span>
-                                                </div>
+                                            <div class="media-body">
+                                                <h3 class="media-heading course-heading">
+                                                    <a href="search-detail.html">The Modern JavaScript From The Beginning Course</a>
+                                                </h3>
                                             </div>
                                         </div>
-                                        <div class="row event-details-row mrg-t-10">
-                                            <div class="media-left col-sm-4 col-sm-offset-2">
-                                                <p class="package">Package 1</p>
+                                    </td>
+                                    <td>
+                                        <div class="price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-price" value="960" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-d-price" value="0" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-t-price" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-red btn-remove">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="people-count">
+                                            <span class="minus">
+                                                <i class="fa fa-minus"></i>
+                                            </span>
+                                            <input type="text" class="form-control input-num" />
+                                            <span class="plus">
+                                                <i class="fa fa-plus"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object" src="assets/img/search_4.jpg" alt="object">
                                             </div>
-
-                                            <div class="media-left col-sm-2">
-                                                <p class="item-price"> 960 </p>
-                                            </div>
-                                            <div class="media-left col-sm-4">
-                                                <div class="people-count">
-                                                    <span class="minus">
-                                                        <i class="fa fa-minus"></i>
-                                                    </span>
-                                                    <input type="text" class="form-control input-num" readonly />
-                                                    <span class="plus">
-                                                        <i class="fa fa-plus"></i>
-                                                    </span>
-                                                </div>
+                                            <div class="media-body">
+                                                <h3 class="media-heading course-heading">
+                                                    <a href="search-detail.html">The Modern JavaScript From The Beginning Course</a>
+                                                </h3>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 ">
-                        <div class="panel panel-total">
-                            <ul class="list-unstyled">
-                                <li class="list-item text-right">Grand Total:</li>
-                                <li class="list-item">
-                                    <span class="price">960</span>*
-                                    <span class="qty">1</span>
-                                    <span class="pull-right total">960</span>
-                                </li>
-                                <li class="list-item mrg-t-10">
-                                    <a href="#" class="btn btn-default btn-red btn-checkout block-width">Checkout</a>
-                                </li>
-                                <li>
-                                    <hr>
-                                </li>
-                                <li class="list-item">
-                                    <div class="input-group mrg-b-10">
-                                        <input type="text" class="form-control">
-                                        <span class="input-group-btn">
-                                            <button class="btn btn-default btn-red btn-apply" type="button">Apply</button>
-                                        </span>
-                                    </div>
-                                    <p class="alert alert-success">Coupon applied successfully</p>
-                                    <p class="alert alert-danger">Invalid Coupon or Coupon Expired</p>
-                                </li>
-                            </ul>
-                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-price" value="960" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-d-price" value="0" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-t-price" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-red btn-remove">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="people-count">
+                                            <span class="minus">
+                                                <i class="fa fa-minus"></i>
+                                            </span>
+                                            <input type="text" class="form-control input-num" />
+                                            <span class="plus">
+                                                <i class="fa fa-plus"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object" src="assets/img/search_4.jpg" alt="object">
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="media-heading course-heading">
+                                                    <a href="search-detail.html">The Modern JavaScript From The Beginning Course</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-price" value="960" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-d-price" value="0" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-t-price" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-red btn-remove">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="people-count">
+                                            <span class="minus">
+                                                <i class="fa fa-minus"></i>
+                                            </span>
+                                            <input type="text" class="form-control input-num" />
+                                            <span class="plus">
+                                                <i class="fa fa-plus"></i>
+                                            </span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="media">
+                                            <div class="media-left media-middle">
+                                                <img class="media-object" src="assets/img/search_4.jpg" alt="object">
+                                            </div>
+                                            <div class="media-body">
+                                                <h3 class="media-heading course-heading">
+                                                    <a href="search-detail.html">The Modern JavaScript From The Beginning Course</a>
+                                                </h3>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-price" value="960" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="discount-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-d-price" value="0" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="total-price">
+                                            <i class="fa fa-rupee"></i>
+                                            <input type="text" class="custom-input i-t-price" readonly>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <a href="#" class="btn btn-red btn-remove">
+                                            <i class="fa fa-trash"></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td colspan="4" class="text-right">Best Price</td>
+                                    <td colspan="2">
+                                        <input type="text" class="custom-input b-price" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="text-right">Discounted Price</td>
+                                    <td colspan="2">
+                                        <input type="text" class="custom-input t-d-price" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="4" class="text-right">Total Price</td>
+                                    <td colspan="2">
+                                        <input type="text" class="custom-input g-t-price" readonly>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="6">
+                                        <div class="input-group mrg-b-10">
+                                            <input type="text" class="form-control" placeholder="Enter Coupon Code">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-default btn-red btn-apply" type="button">Apply Coupon</button>
+                                            </span>
+                                        </div>
+                                        <p class="alert alert-success">Coupon applied successfully</p>
+                                        <p class="alert alert-danger">Invalid Coupon or Coupon Expired</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td colspan="3" class="text-left">
+                                        <a href="#" class="btn btn-red btn-continue">
+                                            <i class="fa fa-long-arrow-left"></i> CONTINUE TO SHOPPING
+                                        </a>
+                                    </td>
+                                    <td colspan="3" class="text-right">
+                                        <a href="#" class="btn btn-red btn-checkout">
+                                            PROCEED TO CHECKOUT <i class="fa fa-long-arrow-right"></i> 
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tfoot>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -425,21 +632,48 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="assets/library/js/bootstrap.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.12.4/js/bootstrap-select.min.js"></script>
+    <script src="assets/scripts/bootstrap-select.min.js"></script>
     <script>
         $('.selectpicker').selectpicker();
         $('[data-toggle="tooltip"]').tooltip();
 
         // Cart 
         var $input = $(".input-num");
-        $input.val(0);
-        $("span").click(function () {
+        var $price = $('.i-price').val();
+        var $dPrice = $('.i-d-price').val();
+        var $totalPrice = $('.i-t-price');
+        var $bestPrice = $('.b-price');
+        var $totalDiscount = $('.t-d-price');
+        var $grandTotal = $('.g-t-price');
+        debugger
+        $input.val(1);
+        console.log(($input.val() * $price));
+        console.log($totalPrice.val(($input.val() * $price)));
+        $totalPrice.val(($input.val() * $price) - $dPrice);
+        $bestPrice.val($totalPrice.val());
+        $totalDiscount.val($dPrice);
+        $grandTotal.val($totalPrice.val());
+        $(".people-count span").click(function () {
+            debugger
             if ($(this).hasClass('plus')) {
                 $input.val(parseInt($input.val()) + 1);
+                $totalPrice.val(($input.val() * $price) - $dPrice);
+                $bestPrice.val($totalPrice.val());
+                $totalDiscount.val($dPrice);
+                $grandTotal.val($totalPrice.val());
             } else if ($input.val() >= 1) {
                 $input.val(parseInt($input.val()) - 1);
+                $totalPrice.val(($input.val() * $price) - $dPrice);
+                $bestPrice.val($totalPrice.val());
+                $totalDiscount.val($dPrice);
+                $grandTotal.val($totalPrice.val());
             }
         });
+
+        //Remove Cart item
+        $('.btn-remove').on('click', function(){
+            $(this).parents('tr').remove();
+        })
 
     </script>
 </body>
