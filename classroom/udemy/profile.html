@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Learn for Tomorrow</title>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700|Roboto:400,500,700" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Bootstrap -->
+    <link href="assets/library/css/bootstrap.min.css" rel="stylesheet">
+    <script src="assets/scripts/fontawesome.js"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link href="assets/css/bootstrap-select.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="navbar navbar-default">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+                    aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo.jpg" alt="logo" class="img-responsive">
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="dropdown open">
+                        <a href="#" class="dropdown-toggle">
+                            <span class="fa fa-th"></span>
+                            Categories
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-building"></i>
+                                    </span>
+                                    <span class="menu-title">Business</span>
+                                </a>
+                            </li>
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-bar-chart"></i>
+                                    </span>
+                                    <span class="menu-title">Marketing</span>
+                                </a>
+                            </li>
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-line-chart"></i>
+                                    </span>
+                                    <span class="menu-title">Sales</span>
+                                </a>
+                            </li>
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-file-code-o"></i>
+                                    </span>
+                                    <span class="menu-title">Development</span>
+                                </a>
+                            </li>
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-file-code-o"></i>
+                                    </span>
+                                    <span class="menu-title">IT & Software</span>
+                                </a>
+                            </li>
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-book"></i>
+                                    </span>
+                                    <span class="menu-title">Personal Development</span>
+                                </a>
+                            </li>
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-paw"></i>
+                                    </span>
+                                    <span class="menu-title">Lifestyle</span>
+                                </a>
+                            </li>
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-music"></i>
+                                    </span>
+                                    <span class="menu-title">Music</span>
+                                </a>
+                            </li>
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-graduation-cap"></i>
+                                    </span>
+                                    <span class="menu-title">Academics</span>
+                                </a>
+                            </li>
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" role="button" target="_self">
+                                    <span class="menu-icon">
+                                        <i class="fa fa-heartbeat"></i>
+                                    </span>
+                                    <span class="menu-title">Health & Fitness</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <form class="navbar-form navbar-right">
+                    <div class="btn btn-cart dropdown open">
+                        <i class="fa fa-shopping-cart dropdown-toggle"></i>
+                        <ul class="dropdown-menu cart-menu">
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <p class="menu-title">Your cart is empty.</p>
+                                <a href="#" class="btn btn-red">Continue to Shopping</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-default btn-sign-up" data-toggle="modal" data-target="#sign-up">Sign Up</a>
+                    <a class="btn btn-default btn-login" data-toggle="modal" data-target="#login">Login</a>
+                    <div class="btn user-logged-in dropdown open">
+                        <div class="dropdown-toggle">
+                            <div class="user-avatar">
+                                <div class="user-initials">SS</div>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu cart-menu">
+                            <li class="list-item">
+                                <a href="#">
+                                    <label class="icon">
+                                        <i class="fa fa-user"></i>
+                                    </label>
+                                    <label> Mark Antony
+                                        <br> markantony@gmail.com </label>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">
+                                    <label class="icon">
+                                        <i class="fa fa-cog"></i>
+                                    </label>
+                                    <label> My Profile </label>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">
+                                    <label class="icon">
+                                        <i class="fa fa-history"></i>
+                                    </label>
+                                    <label>Order History </label>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="#">
+                                    <label class="icon">
+                                        <i class="fa fa-sign-out"></i>
+                                    </label>
+                                    <label>Logout</label>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="dropdown open">
+                        <a href="#" class="dropdown-toggle">Create an Event</a>
+                        <ul class="dropdown-menu cart-menu custom-dropdown">
+                            <li class="menu-link" data-purpose="ver-Development" role="presentation">
+                                <a href="#" class="btn btn-default btn-red">Know More</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section class="main-container">
+        <div class="featured-navbar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <ol class="breadcrumb">
+                            <li>
+                                <a href="#">Home</a>
+                            </li>
+                            <li class="active">
+                                <a href="#">My Profile</a>
+                            </li>
+                        </ol>
+                        <h2>My Profile</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="my-profile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 well">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">User Name</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Password</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Phone</label>
+                                <div class="col-sm-10">
+                                    <input type="password" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">Email</label>
+                                <div class="col-sm-10">
+                                    <input type="email" class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-offset-2 col-sm-10">
+                                    <button type="submit" class="btn btn-red btn-save-profile pull-right">Save</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="bs-footer contact-container">
+            <div class="container">
+                <div class="row">
+                    <ul class="list-unstyled col-sm-3">
+                        <li class="footer-title">
+                            <h3>Contact Info</h3>
+                        </li>
+                        <li class="list-heading">Phone</li>
+                        <li class="list-address">080-321456</li>
+                        <li class="list-caption">Phone suppot available 24x7</li>
+                        <li class="list-heading">Email</li>
+                        <li class="list-address">sri@gmail.com</li>
+                        <li class="list-caption">Email suppot available 24x7</li>
+                    </ul>
+                    <ul class="list-unstyled col-sm-3">
+                        <li class="footer-title">
+                            <h3>Quick Links</h3>
+                        </li>
+                        <li class="list-address">
+                            <a href="#">About us</a>
+                        </li>
+                        <li class="list-address">
+                            <a href="#">Carieers</a>
+                        </li>
+                        <li class="list-address">
+                            <a href="#">FAQ</a>
+                        </li>
+                        <li class="list-address">
+                            <a href="#">Contact us</a>
+                        </li>
+                        <li class="list-address">
+                            <a href="#">Events</a>
+                        </li>
+                    </ul>
+
+                    <ul class="list-unstyled list-social-media col-sm-3 navbar-nav">
+                        <li class="footer-title">
+                            <h3>Social Links</h3>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-facebook-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-twitter-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-google-plus-square"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-pinterest-square"></i>
+                            </a>
+                        </li>
+
+                    </ul>
+                    <div class="col-sm-3">
+                        <div class="footer-title">
+                            <h3>Quick Links</h3>
+                        </div>
+                        <p>Subscribe for newsletter</p>
+                        <div class="input-group">
+                            <input type="text" class="form-control subscribe">
+                            <a href="#" class="btn btn-red btn-subscribe mrg-t-10 pull-right">Subscribe</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="copyright">
+                <p>Copyright &copy; 2018</p>
+            </div>
+        </footer>
+    </section>
+
+    <!-- Sign up Modal -->
+    <div class="modal fade" id="sign-up" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Signup to get start</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <form action="" class="form-horizontal">
+                                <div class="input-group mrg-b-10">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                    </span>
+                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                </div>
+                                <div class="input-group mrg-b-10">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-envelope"></i>
+                                    </span>
+                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-lock"></i>
+                                    </span>
+                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-signup btn-red">Sign Up</button>
+                    <a href="#" data-toggle="modal" data-target="#login">Already have an account</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Login To Your Account</h4>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <ul class="list-unstyled social-login">
+                                <li>
+                                    <a href="#" class="btn btn-default btn-facebook">
+                                        <i class="fa fa-facebook-f"></i> Connect with facebook
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="btn btn-default btn-google">
+                                        <i class="fa fa-google"></i> Connect with Google
+                                    </a>
+                                </li>
+                                <li role="separator" class="divider"></li>
+                            </ul>
+                            <form action="" class="form-horizontal">
+                                <div class="input-group mrg-b-10">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-user"></i>
+                                    </span>
+                                    <input id="login-username" type="text" class="form-control" name="username" value="" placeholder="username or email">
+                                </div>
+
+                                <div class="input-group">
+                                    <span class="input-group-addon">
+                                        <i class="glyphicon glyphicon-lock"></i>
+                                    </span>
+                                    <input id="login-password" type="password" class="form-control" name="password" placeholder="password">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary btn-login btn-red">Login</button>
+                    <a href="#" data-toggle="modal" data-target="#forgot-pwd">Forgot Password ?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Forgot Password -->
+
+    <div class="modal fade" id="forgot-pwd" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h4 class="modal-title" id="myModalLabel">Reset Your Password</h4>
+                </div>
+                <div class="modal-body">
+                    <fieldset>
+                        <div class="form-group">
+                            <input class="form-control input-lg" placeholder="E-mail Address" name="email" type="email">
+                        </div>
+                        <input class="btn btn-lg btn-primary btn-block btn-red" value="Send My Password" type="submit">
+                    </fieldset>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="assets/scripts/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/library/js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="assets/scripts/bootstrap-select.min.js"></script>
+    <script>
+        $('.selectpicker').selectpicker();
+    </script>
+</body>
+
+</html>
