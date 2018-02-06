@@ -939,3 +939,14 @@ footer .nav>li>a>img {
 .my-profile {
     margin: 30px auto;
 }
+/* Checkout */
+.checkout-section .table-checkout .media-body {
+    vertical-align: middle;
+}
+.checkout-section .table-checkout .media-body .course-heading {
+    display: inline-block;
+}
+.checkout-section .table-checkout .course-deal {
+    display: inline-block;
+    padding-left: 15px;
+}
