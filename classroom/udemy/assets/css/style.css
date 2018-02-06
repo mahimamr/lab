@@ -983,3 +983,8 @@ footer .nav>li>a>img {
     border: 1px solid #ccc;
     padding: 4px 12px;
 }
+
+/* Order Confirmation */
+.confirmation-details {
+    text-align: center;
+}
