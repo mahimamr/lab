@@ -84,9 +84,11 @@ header .cart-menu {
 .cart-menu.dropdown-menu>li>a:hover {
     border-color: #f5f5f5;
 }
+
 header .open>.dropdown-menu {
     display: none;
 }
+
 header .open:hover .dropdown-menu {
     display: block;
     transition: 3s all;
@@ -95,6 +97,7 @@ header .open:hover .dropdown-menu {
 .dropdown-toggle {
     background-color: transparent!important;
 }
+
 .search-by-feature .btn-best:after {
     content: "";
     position: absolute;
@@ -105,16 +108,19 @@ header .open:hover .dropdown-menu {
     border-left: 10px solid #f92929;
     right: -10px;
 }
+
 .search-by-feature .btn-best {
     height: auto;
     padding: 0 6px;
     border-radius: 0;
 }
+
 .search-by-feature .best-seller-badge {
     position: absolute;
     right: 0;
     top: 4px;
 }
+
 .user-avatar {
     width: 40px;
     border: 1px solid;
@@ -130,24 +136,30 @@ header .open:hover .dropdown-menu {
     left: 0;
     top: 25%;
 }
+
 .user-logged-in .dropdown-menu {
     text-align: left;
 }
+
 .icon {
     padding-right: 15px;
 }
+
 .user-logged-in .dropdown-menu .list-item label {
     display: inline-block;
     vertical-align: -webkit-baseline-middle;
     font-weight: normal;
 }
+
 .user-logged-in .cart-menu.dropdown-menu>li>a {
     color: #333;
 }
+
 .user-logged-in .cart-menu.dropdown-menu {
     top: 25px;
     right: -30px;
 }
+
 header .notify .badge {
     position: absolute;
     top: 0;
@@ -155,10 +167,12 @@ header .notify .badge {
     right: 0;
     padding: 2px 4px;
 }
+
 .notify .dropdown-menu .media-body {
     max-width: 180px;
     word-break: break-all;
 }
+
 .notify .dropdown-menu .media-heading, .notify .dropdown-menu p {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -166,6 +180,7 @@ header .notify .badge {
     max-width: 180px;
     text-align: left;
 }
+
 /*Header*/
 
 /*Banner Section*/
@@ -376,6 +391,7 @@ select.selectpicker {
     display: inline-block;
     width: 25%;
 }
+
 .show-on-hover .list-item span {
     overflow: hidden;
     text-overflow: ellipsis;
@@ -497,21 +513,26 @@ section.contact-container {
     background-color: transparent !important;
     color: #fff;
 }
+
 input.form-control.subscribe {
     background-color: #524f4f;
     border-color: #524f4f;
 }
+
 .bs-footer li.footer-title {
     float: none;
     display: block;
 }
+
 .footer-title h3 {
     border-bottom: 1px solid;
 }
+
 .copyright {
     background-color: #292626;
     text-align: center;
 }
+
 .copyright p {
     margin-bottom: 0;
     padding: 10px;
@@ -619,6 +640,19 @@ footer .nav>li>a>img {
 }
 
 /* Search Reslut */
+
+.course-deal ul.list-unstyled:first-child {
+    display: none;
+}
+
+.course-deal ul.list-unstyled {
+    display: inline-block;
+}
+
+.course-deal li.list-item {
+    display: inline-block;
+    padding: 0 6px;
+}
 
 /* Search Reslut */
 
@@ -774,6 +808,10 @@ footer .nav>li>a>img {
     margin-right: 10px;
 }
 
+.search-detail .list-social-media li {
+    display: inline-block;
+}
+
 .search-detail .list-social-media li i {
     color: #777;
     font-size: 1em;
@@ -792,6 +830,14 @@ footer .nav>li>a>img {
 
 .search-detail .list-item-text {
     padding: 0 5px;
+}
+
+.search-detail .slider-container #quote-carousel img {
+    width: 100%;
+    height: 100%;
+}
+.search-detail .slider-container #quote-carousel .carousel-control {
+    top: 25%;
 }
 
 /* Cart */
@@ -868,12 +914,15 @@ footer .nav>li>a>img {
     text-align: center;
     min-height: 330px
 }
+
 .pricing-details .panel-primary {
     border-color: #ccc;
 }
+
 .pricing-details .panel-footer p {
     margin-bottom: 0;
 }
+
 .pricing-details .price {
     position: relative;
     top: 0;
@@ -892,6 +941,7 @@ footer .nav>li>a>img {
 .package-type {
     margin: 0 auto 40px;
 }
+
 .package-type h3 {
     margin-bottom: 20px;
 }
@@ -913,18 +963,22 @@ footer .nav>li>a>img {
     background-color: #e28989;
     color: #fff;
 }
+
 .pricing-details .panel-value-back .panel-footer {
     background-color: #589088;
     color: #fff;
 }
+
 .pricing-details .panel-super-value .panel-footer {
     background-color: #4c93d0;
     color: #fff;
 }
+
 .pricing-details .panel-recording .panel-footer {
     background-color: #af7d1c;
     color: #fff;
 }
+
 .panel-classic::before {
     width: 55px;
     height: 30px;
@@ -935,36 +989,48 @@ footer .nav>li>a>img {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
+
 /* Profile */
+
 .my-profile {
     margin: 30px auto;
 }
+
 /* Checkout */
+
 .checkout-section .table-checkout .media-body {
     vertical-align: middle;
 }
+
 .checkout-section .table-checkout .media-body .course-heading {
     display: inline-block;
 }
+
 .checkout-section .table-checkout .course-deal {
     display: inline-block;
     padding-left: 15px;
 }
+
 /* My Orders */
+
 .my-orders table.dataTable thead .sorting {
     background-image: url(../img/sort_both.png);
 }
+
 .my-orders table.dataTable thead .sorting_asc {
     background-image: url(../img/sort_asc.png);
 }
+
 .my-orders table.dataTable thead .sorting_desc {
     background-image: url(../img/sort_desc.png);
 }
+
 .order-qty {
     border: 2px solid #ccc;
     padding: 4px 10px;
     border-radius: 3px;
 }
+
 .my-orders .btn-white {
     border: 2px solid #ccc;
     padding: 4px 10px;
@@ -972,12 +1038,14 @@ footer .nav>li>a>img {
     transition-delay: 0.1s;
     color: #333;
 }
+
 .my-orders .btn-white:hover {
     background-color: #f92929;
     border-color: #f92929;
     color: #fff;
     transition-delay: 0.1s;
 }
+
 .my-orders .dataTables_wrapper .dataTables_filter input {
     margin-left: 0.5em;
     border: 1px solid #ccc;
@@ -985,6 +1053,119 @@ footer .nav>li>a>img {
 }
 
 /* Order Confirmation */
+
 .confirmation-details {
+    text-align: center;
+}
+
+/* Testimonial */
+
+/* carousel */
+
+#quote-carousel {
+    padding: 0 10px 30px 10px;
+    margin-top: 30px;
+}
+
+/* Control buttons  */
+
+#quote-carousel .carousel-control {
+    background: none;
+    color: #222;
+    font-size: 2.3em;
+    text-shadow: none;
+    margin-top: 30px;
+}
+
+/* Previous button  */
+
+#quote-carousel .carousel-control.left {
+    left: -12px;
+}
+
+/* Next button  */
+
+#quote-carousel .carousel-control.right {
+    right: -12px !important;
+}
+
+/* Changes the position of the indicators */
+
+#quote-carousel .carousel-indicators {
+    right: 50%;
+    top: auto;
+    bottom: 0px;
+    margin-right: -19px;
+}
+
+/* Changes the color of the indicators */
+
+#quote-carousel .carousel-indicators li {
+    background: #c0c0c0;
+}
+
+#quote-carousel .carousel-indicators .active {
+    background: #333333;
+}
+
+#quote-carousel img {
+    width: 250px;
+    height: 100px
+}
+
+/* End carousel */
+
+.item blockquote {
+    border-left: none;
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    #quote-carousel {
+        margin-bottom: 0;
+        padding: 0 40px 30px 40px;
+    }
+}
+
+/* Small devices (tablets, up to 768px) */
+
+@media (max-width: 768px) {
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+/* Order- Succsess */
+
+.confirmation-details .table th {
     text-align: center;
 }
